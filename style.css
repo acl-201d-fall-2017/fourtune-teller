@@ -1,10 +1,9 @@
 body{
-    background-color: black;
     color: white;
     outline: none;   
 }
 
-a{
+a {
     color: #ee88fd;
     outline: none;
 }
@@ -14,12 +13,20 @@ a{
     font-size: 4rem;
     font-family: monospace;
     outline: none;
+    margin: 50px 5%;
+    text-shadow: -5px 5px 5px #fcefff;
+    color: #ee88fd;
 }
 
 #custom-links{
     display: flex;
     list-style: none;
     outline: none;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 60%;
 }
 
 #about-link{
@@ -31,10 +38,11 @@ a{
     /* background image from: https://wallpapercave.com/wp/yynPaPg.jpg */
     background-image: url('images/wolves.jpg');  
     background-size: cover;
+    background-repeat: no-repeat;
     
 }
 #userInput{
-    width: 60%;
+    width: 80%;
     margin: 70px auto;
     margin-bottom: 0;
     outline: none;
@@ -56,8 +64,8 @@ a{
     border-radius: 2px;
     outline: none;
     font-family: monospace;
-    font-size: 15pt;
-    background-color: #ee88fd;
+    font-size: 1em;
+    background-color: #fcefff;
     text-align: center;
     color: black;
     border: none;
@@ -71,9 +79,8 @@ a{
 
 .inputBox:focus{
     opacity: 1;
-    /* background-color: black; */
     color: black;
-    font-size: 15pt;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -94,7 +101,8 @@ a{
     box-shadow: -5px 5px 5px #fcefff;
     outline: none;
     font-family: monospace;
-    font-size: 25pt;
+    font-size: 1.25em;
+    font-weight: bold;
     color: black;
     margin-top: 35px;
    
@@ -113,14 +121,15 @@ a{
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    font-size: 25pt;
+    font-size: 1.25em;
     border-radius: 12px;
     border-style: none;
     height: 40px;
-    width:28.6%;
+    width: 38.5%;
     background-color: #ee88fd;
     outline: none;
     font-family: monospace;
+    font-weight: bold;
     color: black;
 
 }
@@ -131,6 +140,7 @@ a{
     color: white;
 }
 /********************/
+/* image source: https://wallscover.com/images/dark-wallpaper-14.jpg */
 
 #about-body{
     background-image: url('images/moonlight.jpg');
@@ -139,18 +149,28 @@ a{
     margin: 0 auto;
     font-family: monospace;
     font-size: 13pt;
+    background-repeat: no-repeat;
 }
 
 #aboutHeader{
     text-align: center;
     font-size: 4rem;
     font-family: monospace;
+    text-shadow: -5px 5px 5px #fcefff;
+    color: #ee88fd
+}
+
+#aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .profiles{
-    position: flex;
-    height: 200px;
-    margin-top: 100px;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center
 }
 
 img {
@@ -158,6 +178,7 @@ img {
     width: 200px;
     height: auto;
     margin-right: 20px;
+
 }
 
 #aboutLinksTop{
@@ -181,12 +202,40 @@ img {
 }
 
 /* INDEX */
+/* #logo-div {
+    display: flex;
+    justify-content: space-around;
+    }
+    
 #logo {
-    margin-top: -250px;
+    margin-top: -120px;
+    margin-bottom: 20px;
+    /* margin-left: 38%; /
+    / width: 250px; */
+    /* height: auto;
+    z-index: 100000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */ 
+#logo {
+    margin-top: -20%;
     margin-left: 38%;
     width: 250px;
     height: auto;
+    z-index: 100000;
 } 
+
+@media (max-width: 600px ){
+    #logo{
+        min-width: 200px;
+        margin-top: -20%;
+        margin-left: 21%;
+        width: 20%;
+        height: auto;
+        z-index: 100000;
+    }
+}
 
 #animation-form {
     font-family: monospace;
@@ -194,8 +243,25 @@ img {
     font-size: .75em;
     display: block;
     margin: 10px auto;
+    padding: 15px 25px;
     text-align: center;
-    width: 35%;
     height: 35px;
 
+}
+#footer-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-nav a {
+    color: #a30ae3;
+    font-size: .75em;
+}
+
+#disclaimer  {
+    color: #222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: .75em;
 }

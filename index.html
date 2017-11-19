@@ -4,64 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Fourtune Teller</title>
     <link rel="stylesheet" type="text/css" href="animation.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-        
-  <div id="nav">
-      <nav>
-          <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="custom.html">Customize</a></li>
-          </ul>
-      </nav>
-  </div>
-  <div class='cristalBall'>
-    <div class='background'>
-      <div class='circle'>
-        <div class='circle1'>
-          <div class='circle2'>
-            <div class='circle3'>
-              <div class='star'>✶</div>
-              </div>
+<body id='homeBody'>
+    <!-- <div class='cristalBall'> -->
+        <!-- <div class='background'> -->
+            <div class='circle'>
+                <div class='circle1'>
+                    <div class='circle2'>
+                        <div class='circle3'>
+                            <div class='star'>✶</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        <!-- </div> -->
+    <!-- </div> -->
     <article>
-        <div id="main">
-            <img src="images/fourtune-tellers-2-bk.png" id="logo">
-                
+        <div id='logo-div'><img src="images/fourtune-tellers-2-bk.png" id="logo"></div>
+        <div id="main">      
             <form>
-                <input type="text" name="question" placeholder="Ask your question here" id="animation-form">
+                <input type="text" name="question" placeholder="Ask question here" id="animation-form">
             </form>
-            <div>
-                <!-- <img src="./images/8-ball.jpg" alt="magic 8 ball" id="eightBallImage"/><p>(animation on click)</p> -->
-                <!-- <h2 id="answer">text answer (animation TBD)</h2> -->
-            </div>
         </div>
           <h1 id="answer">Your Future</h1>
-          <button id="shuffler">enter</button>
-      </article>
-      <!-- <button><a href="custom.html">Customize Your Future</a></button> -->
-
-      <footer>
-          <p>Disclaimer</p>
-          <nav>
-              <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="custom.html">Customize</a></li>
-              </ul>
-          </nav>
-      </footer>
+          <button id="shuffler">submit</button>
+          <div id ="footer">
+                <div id ="footer-nav">
+                    <a href="about.html">About Us</a>
+                    <a href="custom.html">Customize</a>
+                </div>
+                <div id ="disclaimer"><p>The Fourtune Tellers are not responsible for your decisions</p></div>
+            </div>
+        </article>
   <script src="animation.js"></script>
-  <script src ='vendor/shake.js'></script>
+  <script src="vendor/shake.js"></script>
   <script src="app.js"></script>
-
-
-
 </body>
 </html>
